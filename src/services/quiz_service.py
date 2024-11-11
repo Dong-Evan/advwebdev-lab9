@@ -25,7 +25,7 @@ class QuizService:
         quiz = QuizModel.get_quiz(quiz_id)
 
         # If `quiz` is None, return None and "Quiz not found"
-        if quiz is None: 
+        if quiz is None:
             return None, "Quiz not found"
 
         # Compare `user_answers` with `quiz.questions`, count correct answers,

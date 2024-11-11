@@ -23,7 +23,7 @@ def test_create_quiz(mock_create_quiz, client):
     # Assert that status code is 201, `quiz_id` in response is 1, and
     # `mock_create_quiz` was called once
     assert response.status_code == 201
-    assert response.json["quiz_id"] == 1 
+    assert response.json["quiz_id"] == 1
     mock_create_quiz.assert_called_once()
 
 
